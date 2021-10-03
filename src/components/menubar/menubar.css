@@ -1,0 +1,302 @@
+
+/* html, body {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.wrapper {
+	margin-top: 10px;
+	margin-left: -10px;
+}
+
+.sidebar__header {
+	text-align: left;
+	margin-left: -10px;
+	background: #e9e9ec;
+	width: 250px;
+  }
+
+  .sidebar__psition {
+	  color: #1b1b1b;
+	  margin-left: 50px;
+  }
+  .cat_h_border {
+	  /* border-top: 5px solid red; */
+	  border-bottom: 10px solid #1b1b1b;
+  }
+/* define a fixed width for the entire menu */
+.navigation {
+  width: 250px;
+}
+
+.mainmenu .fas-down {
+	float: right;
+	color: #474646;
+	margin-top: -2px;
+	margin-right:0.5rem; 
+	font-size:18px;
+}
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+	/* border: 1px solid red; */
+  list-style: none;
+  padding: 0.5px;
+  margin: 0.5px;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 2px;
+  color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #f7f3f3;
+	border: 1px solid #999;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 900px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: rgb(231, 227, 227);
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: rgb(212, 212, 212);
+  border: 1px solid #999;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+/* .App {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.Sidebar {
+	height: 100%;
+	width: 250px;
+	background-color: #2F4050;
+}
+
+.SidebarList {
+	height: auto;
+	width: 100%;
+	padding: 0;
+}
+
+.SidebarList .row {
+	width: 100%;
+	height: 60px;
+	list-style-type: none;
+	margin: 0%;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.SidebarList .row:hover {
+	cursor: pointer;
+	background-color: #293846;
+}
+
+.SidebarList #active {
+background-color: #293846;
+}
+
+.row #icon {
+	flex: 30%;
+	display: grid;
+	place-items: center;
+}
+
+.row #title {
+	flex: 70%;
+}
+ */
+/* .wrapper {
+	position: absolute;
+	background: #dbd9d9;
+	width: 250px;
+	line-height: 40px;
+	padding: 8px 25px;
+	border-radius: 5px;
+}
+
+.wrapper label {
+	color: #1b1b1b;
+	font-size: 22px;
+	font-weight: 500;
+	display: block;
+	cursor: pointer;
+}
+
+.button span {
+	float: right;
+	line-height: 35px;
+}
+
+.wrapper ul{
+	position: absolute;
+	background: #dbd9d9;
+	list-style: none;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	border-radius: 5px;
+	display: none;
+}
+[id^=btn]:checked + ul {
+	display: block;
+}
+.wrapper .menu:before {
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 20px;
+	background: #1b1b1b;
+	right: 20px;
+	top: -10px;
+	transform: rotate(45deg);
+	z-index: -1;
+}
+.wrapper ul li {
+	line-height: 40px;
+	padding: 8px 20px;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.wrapper ul li label {
+	font-size: 15px;
+}
+.wrapper ul li a{
+	color: #1b1b1b;
+	text-decoration: none;
+	font-size: 15px;
+	display: block;
+}
+
+.wrapper ul li a:hover,
+.wrapper ul li label:hover{
+	color: #5c5b5b;
+
+}
+.wrapper ul ul {
+	position: static;
+}
+
+.wrapper ul ul li {
+	line-height: 5px;
+	padding-left: 30px;
+	border-bottom: none;
+}
+
+.wrapper ul ul li a {
+	color: #1b1b1b;
+	font-size: 15px;
+
+}
+.wrapper ul li span {
+	font-size: 20px;
+	float: right;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+.iptype {
+	display: none;
+} */
+
+
+
+
+/* .wrapper {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+  }
+  
+  #sidebar {
+	min-width: 170px;
+	max-width: 170px;
+	color: #0a0a0a;
+	transition: all 0.3s;
+  }
+  
+  #sidebar.active {
+  }
+  
+  #sidebar .sidebar-header {
+	text-align: left;
+	background: #d7d7ee;
+  }
+  
+  #sidebar ul li a {
+	padding: 8px 0 8px 0;
+	font-size: 14px;
+	display: block;
+	color: #838181;
+	text-align: left;
+  }
+  
+  #sidebar ul li a:hover {
+	color: #0a0a0a;
+	background: #f5f5f7;
+	text-decoration: none;
+  }
+  
+  #sidebar ul li.active > a,
+  a[aria-expanded="true"] {
+	color: #0a0a0a;
+	background: #fafafc;
+  }
+  
+  a[data-toggle="collapse"] {
+	position: relative;
+  }
+  
+  .dropdown-toggle::after {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 155px;
+	transform: translateY(-50%);
+  }
+  
+  ul ul a {
+	font-size: 14px !important;
+	text-align: left;
+	color: #0a0a0a;
+  } */
